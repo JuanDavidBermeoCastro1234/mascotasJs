@@ -1,4 +1,4 @@
-
+import { mascotas, datos } from "./registrar.js";
 alert ("hola por favor selecciona una de las opciones para continuar ")
 
 let opciones = prompt (`

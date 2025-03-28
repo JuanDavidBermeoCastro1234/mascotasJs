@@ -1,15 +1,19 @@
-let mascotas = [{
-    id:1,
+let mascotas = []
+
+function registrar(){
+    let nuevaMascota = {
+    id: mascotas.length+1,
     Nombre : prompt('Nombre de la mascota'),
-    especie:prompt('Perro', 'Gato', 'Conejo'), // Lista de especies posibles
+    especie:prompt('escribe la especie'),
     Edad : prompt ("Edad de la mascota"), 
     Peso: prompt ("Peso de la mascota"), 
     EstadoDeSalud : prompt ("Estado de salud de la mascota (Sano, Enfermo, En tratamiento)"),
-}];
+
+    }
+
+    mascotas.push(nuevaMascota)
+    console.log(nuevaMascota)
+};
 
 
-const datos = mascotas.filter(()=> true )
-
-console.log(datos)
-
-export {mascotas,datos};
+export {mascotas, registrar};
